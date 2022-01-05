@@ -85,8 +85,8 @@ body {
 
 @media (max-width:476px){
     .calculator-grid {
-        grid-template-columns: repeat(4, 75px);
-        grid-template-rows: minmax(120px, auto) repeat(5, 75px);
+        grid-template-columns: repeat(4, 70px);
+        grid-template-rows: minmax(120px, auto) repeat(5, 70px);
 
         width: 350px;
         height: 600px;
@@ -94,6 +94,7 @@ body {
     }
     .calculator-grid > button {
         margin: 5px;
+        font-size: 1.5rem;
     }
     #delete {
         font-size: 1rem;
