@@ -10,20 +10,33 @@ body {
     background: linear-gradient(to right, #00AAFF, #00FF6C);    
 }
 
+.main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
 .calculator-grid {
     display: grid;
     justify-content: center;
     align-content: center;
-    min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
     /* first row (output) to be minimum 120 px, and can grow as much as it needs */
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+
+    width: 450px;
+    height: 700px;
+    padding-top: 20px;
+    background-color: antiquewhite;
 }
 
 .calculator-grid > button {
+    margin: 10px;
     cursor: pointer;
     font-size: 2rem;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     outline: none;
     background-color: rgba(255,255,255,.75);
 }
@@ -34,6 +47,17 @@ body {
 
 .span-two {
     grid-column: span 2;
+    border-radius: 25%;
+    border-color: white;
+}
+
+.span-one {
+    border-radius: 50%;
+    border-color: white;
+}
+
+#delete {
+    font-size: 1.5rem;
 }
 
 .output {
